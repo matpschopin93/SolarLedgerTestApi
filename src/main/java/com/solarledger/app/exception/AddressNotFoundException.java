@@ -1,8 +1,15 @@
 package com.solarledger.app.exception;
-public class AddressNotFoundException extends Exception {
-    private long book_id;
-    public AddressNotFoundException(long addres_id) {
-        super(String.format("Address is not found with id : '%s'", addres_id));
+
+import org.springframework.http.HttpStatus;
+import org.springframework.web.bind.annotation.ResponseStatus;
+
+@ResponseStatus(HttpStatus.NOT_FOUND)
+public class AddressNotFoundException extends RuntimeException
+{
+    public AddressNotFoundException(String exception) {
+        super(exception);
     }
+
 }
+
 
