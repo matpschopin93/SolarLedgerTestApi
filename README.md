@@ -16,7 +16,7 @@ In the folder test/resource there are some examples of request Body in Json Form
 
 I didn't implemented Services classes (maybe i shoulded put the Java Stream there?) cause of the business logical was easy,
 so I think the Repository class was enougth to work directly into the Controller.
-I used a mySqlWorkbeanch DBMS, and I prefered to sort alphabetically using the query because is more efficiently than Java function.
+I used a mySqlWorkbeanch DBMS and Java 11, I prefered to sort alphabetically using the query because is more efficiently than Java function.
 
 Best Regards
 
